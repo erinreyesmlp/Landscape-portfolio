@@ -79,3 +79,76 @@ form input, form textarea, form button {
   padding: 10px;
   font-size: 1em;
 }
+/* About Page Styles */
+.about-container {
+  max-width: 1100px;
+  margin: 80px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.about-container h1 {
+  margin-bottom: 30px;
+}
+
+.about-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #111;
+  color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  gap: 20px;
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.about-text h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* ✅ Mobile-friendly layout */
+@media (max-width: 768px) {
+  .about-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about-text {
+    padding-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+}
